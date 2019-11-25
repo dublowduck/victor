@@ -1,0 +1,6 @@
+Windows Registry Editor Version 5.00
+
+; Created by dublowduck
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\OEMInformation]
+"Manufacturer"="Victor Industaries"
