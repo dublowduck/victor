@@ -4,4 +4,4 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\OEMInformation]
 "Manufacturer"="Victor Industaries"
-"Logo"="c:\windows\system32\\oemlogo.bmp"
+"Logo"="c:\windows\system32\\logo_black-0.1.0.bmp"
