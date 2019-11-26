@@ -1,4 +1,4 @@
-# victor
+# Victor
 
 This is the official Victor Project repository.
 
