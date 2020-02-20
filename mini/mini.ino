@@ -27,7 +27,7 @@ else if (lcdOn == 0) {
   lcd.noDisplay(); // turns off the lcd
   lcd.setBacklight(LOW); // turns the backlight off
 }
-
+lcd.write("Banna");
 }
 
 
