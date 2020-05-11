@@ -1,6 +1,7 @@
 #Import the requirered modules
 import os
 import time
+import webbrowser
 
 #Explain whats going on
 print("Welcome to the Victor Project")
@@ -33,3 +34,16 @@ if input("Do you want to install openssh-server?:") == "y":
     print("Installing openssh-server")
     os.system("sudo apt-get install openssh-server")
     print("Done")
+
+time.sleep(3)
+print("Installing programs")
+time.sleep(3)
+#Tell them to install Mycroft
+print("Now you need to install Mycroft")
+time.sleep(3)
+print("At the moment this cannot be done automacticly")
+time.sleep(3)
+print("Simply clone this repository in a normal terminal window")
+time.sleep(3)
+print("https://github.com/MycroftAI/mycroft-core")
+webbrowser.open('https://github.com/MycroftAI/mycroft-core', new=2)
