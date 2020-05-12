@@ -41,9 +41,17 @@ time.sleep(3)
 #Tell them to install Mycroft
 print("Now you need to install Mycroft")
 time.sleep(3)
-print("At the moment this cannot be done automacticly")
-time.sleep(3)
-print("Simply clone this repository in a normal terminal window")
-time.sleep(3)
-print("https://github.com/MycroftAI/mycroft-core")
-webbrowser.open('https://github.com/MycroftAI/mycroft-core', new=2)
+#print("At the moment this cannot be done automacticly")
+#time.sleep(3)
+#print("Simply clone this repository in a normal terminal window")
+#time.sleep(3)
+#print("https://github.com/MycroftAI/mycroft-core")
+#webbrowser.open('https://github.com/MycroftAI/mycroft-core', new=2)
+#s.system("cd /home/rupert/")
+#os.system("git clone https://github.com/MycroftAI/mycroft-core.git")
+
+path  = "/home/rupert/" 
+clone = "git clone https://github.com/MycroftAI/mycroft-core.git" 
+os.chdir(path) # Specifying the path where the cloned project needs to be copied
+os.system(clone) # Cloning
+os.system("bash /home/rupert/mycroft-core/dev_setup.sh") # Run the setup file
