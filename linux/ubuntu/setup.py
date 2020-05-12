@@ -3,6 +3,9 @@ import os
 import time
 import webbrowser
 
+#clear the screen
+os.system("clear")
+
 #Explain whats going on
 print("Welcome to the Victor Project")
 time.sleep(3)
