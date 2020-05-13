@@ -46,8 +46,8 @@ print("Now you need to install Mycroft")
 time.sleep(3)
 
 #Clone the repo
-path  = "/home/rupert/" 
+path  = "/home/victor/" 
 clone = "git clone https://github.com/MycroftAI/mycroft-core.git" 
 os.chdir(path) # Specifying the path where the cloned project needs to be copied
 os.system(clone) # Cloning
-os.system("bash /home/rupert/mycroft-core/dev_setup.sh") # Run the setup file
+os.system("bash /home/victor/mycroft-core/dev_setup.sh") # Run the setup file
