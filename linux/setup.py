@@ -14,13 +14,13 @@ time.sleep(3)
 
 #ask if they are using gnome
 if input("Are you using Gnome?:") == "y":
-    #Change some Ubuntu settings
+    #Change some Gnome settings
     print("Gnome settings:")
     #ask if they want to disable the lock screen
     if input("Do you want to disable the lock screen?:") == "y":
         os.system("gsettings set org.gnome.desktop.screensaver lock-enabled false")
 
-    #ask if they want ubuntu dark mode
+    #ask if they want Gnome dark mode
     if input("Do you want to use Gnome dark mode?:") == "y":
         os.system("gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-dark'")
 
