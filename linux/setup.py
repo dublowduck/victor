@@ -102,7 +102,7 @@ elif a1 == "r":
         print("cool-retro-term installed")
     elif a2 == "e":
         print("\n")
-        print("Installing Edex-ui...")
+        print("Installing eDEX-UI...")
         time.sleep(2)
         print("Ok, so you have to be a bit proactive with this one")
         time.sleep(3)
