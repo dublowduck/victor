@@ -7,14 +7,16 @@ import webbrowser
 os.system("clear")
 
 #Explain whats going on
+print("=============================")
 print("Welcome to the Victor Project")
+print("=============================")
 time.sleep(3)
 print("This script will set up everything you need")
 time.sleep(3)
 
 #update the system first
 print("The first thing you need to do is update and upgrade your system")
-if input("Do you want to skip this?:") != "y":
+if input("Do you want to do this?:") == "y":
     os.system("sudo apt-get update")
     print("And the fun one")
     os.system("sudo apt-get upgrade")
@@ -30,13 +32,18 @@ if input("Are you using Gnome?:") == "y":
         os.system("gsettings set org.gnome.desktop.screensaver lock-enabled false")
 
     #ask if they want Gnome dark mode
-    if input("Do you want to use Gnome dark mode?:") == "y":
+    if input("Do you want to use Gnome dark mode (Yaru-dark) ?:") == "y":
         os.system("gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-dark'")
 
 #Install recomended packeges
 print("Installing recomended packeges:")
+print("-------------")
+print("Recomended packeges")
+print("-------------")
+
+print("If unsure, say yes")
 #Ask if they want to install net tools
-if input("Do you want to install net tools? (Yes if unsure):") == "y":
+if input("Do you want to install net-tools?:") == "y":
     print("Installing net tools")
     os.system("sudo apt install net-tools")
     print("Done")
@@ -54,18 +61,20 @@ if input("Do you want to install neofetch?:") == "y":
     print("Done")
 
 time.sleep(3)
+print("\n")
 print("Installing programs")
 time.sleep(3)
 #Tell them to install Mycroft
 print("Now you need to install Mycroft")
-time.sleep(3)
-
-#Clone the repo
-path  = "/home/rupert/" 
-clone = "git clone https://github.com/MycroftAI/mycroft-core.git" 
-os.chdir(path) # Specifying the path where the cloned project needs to be copied
-os.system(clone) # Cloning
-os.system("bash /home/rupert/mycroft-core/dev_setup.sh") # Run the setup file
+a3 = input("Confirm installing Mycroft (if you don`t victor probably won`t work):")
+if a3 == "y":
+    #Clone the repo
+    path  = "/home/rupert/" 
+    clone = "git clone https://github.com/MycroftAI/mycroft-core.git" 
+    os.chdir(path) # Specifying the path where the cloned project needs to be copied
+    os.system(clone) # Cloning
+    os.system("bash /home/rupert/mycroft-core/dev_setup.sh") # Run the setup file
+    time.sleep(3)
 
 #Customization
 print("And relax")
@@ -74,6 +83,11 @@ print("That was the hardest bit")
 time.sleep(2)
 print("Now for the customization:")
 os.system("clear")
+
+print("-------------")
+print("Customization")
+print("-------------")
+
 os.system("neofetch")
 time.sleep(1)
 print("This is Victor's new home, and your computers specs")
