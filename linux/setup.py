@@ -38,6 +38,12 @@ if input("Do you want to install openssh-server?:") == "y":
     os.system("sudo apt-get install openssh-server")
     print("Done")
 
+#Ask if they want to install neofetch
+if input("Do you want to install neofetch?:") == "y":
+    print("Installing neofetch")
+    os.system("sudo apt-get install neofetch")
+    print("Done")
+
 time.sleep(3)
 print("Installing programs")
 time.sleep(3)
