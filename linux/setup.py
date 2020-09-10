@@ -12,6 +12,15 @@ time.sleep(3)
 print("This script will set up everything you need")
 time.sleep(3)
 
+#update the system first
+print("The first thing you need to do is update and upgrade your system")
+if input("Do you want to skip this?:") != "y":
+    os.system("sudo apt-get update")
+    print("And the fun one")
+    os.system("sudo apt-get upgrade")
+    print("There, much better")
+time.sleep(2)
+
 #ask if they are using gnome
 if input("Are you using Gnome?:") == "y":
     #Change some Gnome settings
