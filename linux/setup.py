@@ -1,5 +1,6 @@
 #Import the requirered modules
 import os
+import getpass
 import time
 import webbrowser
 
@@ -14,8 +15,20 @@ time.sleep(3)
 print("This script will set up everything you need")
 time.sleep(3)
 
+print("\n")
+print("Firstly, is this your username?")
+if input(getpass.getuser() + " (y/n):") == "y":
+    print("Good")
+else:
+    username = input("What is your username?:")
+    time.sleep(2)
+    print("Ok thank you")
+    print("\n")
+
+print("bash /home/" + username + "/mycroft-core/dev_setup.sh")
+
 #update the system first
-print("The first thing you need to do is update and upgrade your system")
+print("Now we need to update and upgrade your system")
 if input("Do you want to do this?:") == "y":
     os.system("sudo apt-get update")
     print("And the fun one")
@@ -69,11 +82,11 @@ print("Now you need to install Mycroft")
 a3 = input("Confirm installing Mycroft (if you don`t victor probably won`t work):")
 if a3 == "y":
     #Clone the repo
-    path  = "/home/rupert/" 
-    clone = "git clone https://github.com/MycroftAI/mycroft-core.git" 
+    path  = "/home/" + username
+    clone = "sudo git clone https://github.com/MycroftAI/mycroft-core.git" 
     os.chdir(path) # Specifying the path where the cloned project needs to be copied
     os.system(clone) # Cloning
-    os.system("bash /home/rupert/mycroft-core/dev_setup.sh") # Run the setup file
+    os.system("sudo bash /home/" + username + "/mycroft-core/dev_setup.sh --allow-root") # Run the setup file
     time.sleep(3)
 
 #Customization
