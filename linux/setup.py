@@ -37,9 +37,9 @@ if input("Are you using Gnome?:") == "y":
 
 #Install recomended packeges
 print("Installing recomended packeges:")
-print("-------------")
+print("-------------------")
 print("Recomended packeges")
-print("-------------")
+print("-------------------")
 
 print("If unsure, say yes")
 #Ask if they want to install net tools
@@ -138,3 +138,19 @@ elif a1 == "r":
         print("\n")
         print("Done")
         print("Konsole installed")
+
+#ending bit thing
+
+print("\n")
+print("-------")
+print("The end")
+print("-------")
+time.sleep(3)
+
+print("\n")
+print("You have successfully installed Victor and all the packages and the components that make it work")
+time.sleep(4)
+print("\n")
+print("Well done. To use Victor open the Terminal that you downloaded and cd to the folder that this script is in and run the run.py python file")
+time.sleep(3)
+print("Bye bye")
