@@ -19,6 +19,7 @@ print("\n")
 print("Firstly, is this your username?")
 if input(getpass.getuser() + " (y/n):") == "y":
     print("Good")
+    username = getpass.getuser()
 else:
     username = input("What is your username?:")
     time.sleep(2)
