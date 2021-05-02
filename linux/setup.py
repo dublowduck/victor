@@ -37,18 +37,6 @@ if input("Do you want to do this?:") == "y":
     print("There, much better")
 time.sleep(2)
 
-#ask if they are using gnome
-if input("Are you using Gnome?:") == "y":
-    #Change some Gnome settings
-    print("Gnome settings:")
-    #ask if they want to disable the lock screen
-    if input("Do you want to disable the lock screen?:") == "y":
-        os.system("gsettings set org.gnome.desktop.screensaver lock-enabled false")
-
-    #ask if they want Gnome dark mode
-    if input("Do you want to use Gnome dark mode (Yaru-dark) ?:") == "y":
-        os.system("gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-dark'")
-
 #Install recomended packeges
 print("Installing recomended packeges:")
 print("-------------------")
@@ -101,6 +89,18 @@ os.system("clear")
 print("-------------")
 print("Customization")
 print("-------------")
+
+#ask if they are using gnome
+if input("Are you using Gnome?:") == "y":
+    #Change some Gnome settings
+    print("Gnome settings:")
+    #ask if they want to disable the lock screen
+    if input("Do you want to disable the lock screen?:") == "y":
+        os.system("gsettings set org.gnome.desktop.screensaver lock-enabled false")
+
+    #ask if they want Gnome dark mode
+    if input("Do you want to use Gnome dark mode (Yaru-dark) ?:") == "y":
+        os.system("gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-dark'")
 
 os.system("neofetch")
 time.sleep(1)
